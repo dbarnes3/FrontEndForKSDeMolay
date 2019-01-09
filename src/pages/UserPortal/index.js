@@ -9,6 +9,10 @@ class UserPortalPage extends React.Component {
     roles: ['agent', 'administrator'],
   };
 
+  componentDidMount(){
+    window.location ="https://www.ksdemolay.org"
+  }
+
   render() {
     const props = this.props;
     return (

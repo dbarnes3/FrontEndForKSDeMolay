@@ -18,10 +18,24 @@ export default [
         icon: 'icmn icmn-books',
     },
     {
-        title: 'Useful Forms',
-        key: 'forms',
-        url: '/forms',
+        title: 'Useful Forms & Links',
+        key: 'useful',
+        url: '/useful',
         icon: 'icmn icmn-books',
+        children: [
+            {
+                title: 'Forms',
+                key: 'forms',
+                url: '/forms',
+                icon: 'icmn icmn-books',
+            },
+            {
+                title: 'Links',
+                key: 'links',
+                url: '/links',
+                icon: 'icmn icmn-books',
+            },
+        ]
     },
     {
         title: 'KS Demolay Leadership',

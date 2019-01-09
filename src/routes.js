@@ -25,7 +25,10 @@ const loadableRoutes = {
         component: loadable(() => import('pages/Calendar/')),
     },
     '/forms': {
-        component: loadable(() => import('pages/UsefulForms/')),
+        component: loadable(() => import('pages/Useful/UsefulForms/')),
+    },
+    '/links': {
+        component: loadable(() => import('pages/Useful/UsefulLinks/')),
     },
     '/leaders/stateOfficers': {
         component: loadable(() => import('pages/leaders/stateOfficers/')),
