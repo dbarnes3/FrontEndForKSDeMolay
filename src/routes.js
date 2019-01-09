@@ -15,13 +15,39 @@ const loadable = loader =>
 
 const loadableRoutes = {
   // Dashboards
-  '/home': {
-    component: loadable(() => import('pages/Home/')),
+    '/home': {
+        component: loadable(() => import('pages/Home/')),
+    },
+  '/about': {
+    component: loadable(() => import('pages/About/')),
   },
-  // AntDesign
-  '/antdesign/affix': {
-    component: loadable(() => import('pages/AntDesign/AffixPage')),
-  }
+    '/calendar': {
+        component: loadable(() => import('pages/Calendar/')),
+    },
+    '/forms': {
+        component: loadable(() => import('pages/UsefulForms/')),
+    },
+    '/leaders/stateOfficers': {
+        component: loadable(() => import('pages/leaders/stateOfficers/')),
+    },
+    '/leaders/stateStaff': {
+        component: loadable(() => import('pages/leaders/stateStaff/')),
+    },
+    '/leaders/pastSweethearts': {
+        component: loadable(() => import('pages/leaders/pastSweethearts/')),
+    },
+    '/leaders/psmc': {
+        component: loadable(() => import('pages/leaders/psmc/')),
+    },
+    '/leaders/pastEos': {
+        component: loadable(() => import('pages/leaders/pastEos/')),
+    },
+    '/userPortal': {
+        component: loadable(() => import('pages/UserPortal/')),
+    },
+    '/contactUs': {
+        component: loadable(() => import('pages/ContactUs/')),
+    },
 }
 
 class Routes extends React.Component {

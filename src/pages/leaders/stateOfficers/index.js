@@ -1,11 +1,11 @@
 import React from 'react';
 import Page from 'components/LayoutComponents/Page';
 import Helmet from 'react-helmet';
-import UnderDevelopment from './../UnderDevelopment';
+import UnderDevelopment from './../../UnderDevelopment';
 
-class HomePage extends React.Component {
+class StateOfficerPage extends React.Component {
   static defaultProps = {
-    pathName: 'Home',
+    pathName: 'State Officers',
     roles: ['agent', 'administrator'],
   };
 
@@ -13,11 +13,11 @@ class HomePage extends React.Component {
     const props = this.props;
     return (
       <Page {...props}>
-        <Helmet title="Home" />
+        <Helmet title="State Officers" />
         <UnderDevelopment/>
       </Page>
     );
   }
 }
 
-export default HomePage
+export default StateOfficerPage

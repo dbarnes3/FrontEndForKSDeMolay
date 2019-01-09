@@ -3,9 +3,9 @@ import Page from 'components/LayoutComponents/Page';
 import Helmet from 'react-helmet';
 import UnderDevelopment from './../UnderDevelopment';
 
-class HomePage extends React.Component {
+class CalendarPage extends React.Component {
   static defaultProps = {
-    pathName: 'Home',
+    pathName: 'Calendar',
     roles: ['agent', 'administrator'],
   };
 
@@ -13,11 +13,11 @@ class HomePage extends React.Component {
     const props = this.props;
     return (
       <Page {...props}>
-        <Helmet title="Home" />
+        <Helmet title="Calendar" />
         <UnderDevelopment/>
       </Page>
     );
   }
 }
 
-export default HomePage
+export default CalendarPage
