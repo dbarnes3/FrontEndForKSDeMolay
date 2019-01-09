@@ -24,42 +24,58 @@ export default [
         icon: 'icmn icmn-books',
     },
     {
-        title: 'Current & Past Leaders',
+        title: 'KS Demolay Leadership',
         key: 'leaders',
         url: '/leaders',
         icon: 'icmn icmn-books',
         children: [
             {
-                title: 'Current State Officers',
-                key: 'stateofficers',
-                url: '/leaders/stateOfficers',
+                title: 'Current Leaders',
+                key: 'present',
+                url: '/leaders',
                 icon: 'icmn icmn-books',
+                children: [
+                    {
+                        title: 'State Officers',
+                        key: 'stateofficers',
+                        url: '/leaders/stateOfficers',
+                        icon: 'icmn icmn-books',
+                    },
+                    {
+                        title: 'State Staff',
+                        key: 'statestaff',
+                        url: '/leaders/stateStaff',
+                        icon: 'icmn icmn-books',
+                    },
+                ]
             },
             {
-                title: 'Current State Staff',
-                key: 'statestaff',
-                url: '/leaders/stateStaff',
+                title: 'Past Leaders',
+                key: 'past',
+                url: '/leaders',
                 icon: 'icmn icmn-books',
+                children: [
+                    {
+                        title: 'State Master Councilors',
+                        key: 'psmc',
+                        url: '/leaders/psmc',
+                        icon: 'icmn icmn-books',
+                    },
+                    {
+                        title: 'State Sweethearts',
+                        key: 'pastSweethearts',
+                        url: '/leaders/pastSweethearts',
+                        icon: 'icmn icmn-books',
+                    },
+                    {
+                        title: 'Executive Officers',
+                        key: 'pastEos',
+                        url: '/leaders/pastEos',
+                        icon: 'icmn icmn-books',
+                    }
+                ]
             },
-            {
-                title: 'Past State Master Councilors',
-                key: 'psmc',
-                url: '/leaders/psmc',
-                icon: 'icmn icmn-books',
-            },
-            {
-                title: 'Past State Sweethearts',
-                key: 'pastSweethearts',
-                url: '/leaders/pastSweethearts',
-                icon: 'icmn icmn-books',
-            },
-            {
-                title: 'Past Executive Officers',
-                key: 'pastEos',
-                url: '/leaders/pastEos',
-                icon: 'icmn icmn-books',
-            }
-        ]
+            ]
     },
     {
         title: 'User Portal',
